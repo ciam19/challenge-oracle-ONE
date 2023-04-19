@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Alura first challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+</body>
+<div class="container">
+    <div class="card--text">
+        <header>
+            <img src="Vector.svg" alt="logo" class="logo">
+        </header>
+        <textarea id="inputText" rows="10"></textarea>
+        <div class="warnimg--area">
+            <img src="alert.svg" alt="">
+            <span>Solo letras minúsculas y sin acento</span>
+        </div>
+        <div class="buttons--area">
+            <button onclick="encrypt()" class="button-primary button-wd-328px bt-wd-280px">Encriptar</button>
+            <button onclick="decrypt()" class="button-secondary button-wd-328px bt-wd-280px">Desencriptar</button>
+        </div>
+    </div>
+    <div class="card--encripted">
+        <div id="area-en-de-cripter" class="text--en--de--cript">
+            <div id="chart-no-data-found" class="chart-no-data-found">
+                <img src="muneco.svg" alt="">
+            </div>
+            <p id="output"></p>
+            <div id="button-copy" class="buttons--area button copy">
+                <button onclick="copy()" class="button-secondary button-wd-100">Copiar</button>
+            </div>
+        </div>
+        <div id="no-data-encript" class="no-data-encript">
+            <h1>Ningún mensaje fue encontrado
+            </h1>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+    </div>
+</div>
+
+</html>
+<script src="script.js"></script>
